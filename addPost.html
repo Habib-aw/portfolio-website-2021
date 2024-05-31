@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href ="images/iconblack.jpg" type = "image/x-icon">
+    <title>Add Post</title>
+<body>
+<a href="blog.php"><button class="btn btn-1">Return to blog page</button></a>
+    <div id="addpost" class="panels">
+        <form action="addpost.php" method="POST" id="postblog">
+            <h1 class="blog-toggle">Title</h1>
+            <input type="text" placeholder="Entry title" class="blog-inputs blog-toggle" name="title">
+            <h1 class="blog-toggle">What would you like to post about?</h1>
+            <textarea id="" cols="90" rows="30" placeholder="Description" class="blog-inputs blog-toggle" name="description"></textarea>
+            <div class='post' id="previewing" style="background-color: white;">
+                <aside id="date"></aside>
+                <h2 id="blog-header"></h2>
+                <hr>
+                <p id="blog-content"></p>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-3" >Post</button>
+            <button type="button" class="btn btn-3" onclick="clearBlogInput()" id="clear-post">Clear</button>
+            <button type="button" class="btn btn-3" onclick="previewpost(this)">Preview</button>
+        </form>
+    </div>
+    <script src="blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+html, 
+body, 
+div, 
+span,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p,
+a, 
+img, 
+ol, 
+ul, 
+li, 
+i,
+article, 
+figure, 
+figcaption, 
+footer, 
+header, 
+hgroup, 
+nav, 
+section,
+button{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+hr {
+	margin: 0;
+	padding: 0;
+}
+button:focus{
+	outline: none;
+}

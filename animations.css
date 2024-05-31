@@ -1,0 +1,58 @@
+@keyframes change-color {
+    from{color: rgba(8, 8, 8, 0.678);}
+    to{color: rgba(255, 0, 0, 0.589);}
+}
+
+#s1, #a, #b, #d, #u, #l, #w, #a2, #h, #i, #d2, #s2{
+    animation-duration: 100ms;
+    animation-name: change-color;
+}
+
+#s1 {
+    animation-delay: 5s;    
+}
+
+#a {
+    animation-delay: 5100ms;
+}
+
+
+#b {
+    animation-delay: 5200ms;
+}
+
+#d {
+    animation-delay: 5300ms;
+}
+
+#u {
+    animation-delay: 5400ms;
+}
+
+#l {
+    animation-delay: 5500ms;
+}
+
+#w {
+    animation-delay: 5600ms;
+}
+
+#a2 {
+    animation-delay: 5700ms;
+}
+
+#h {
+    animation-delay: 5800ms;
+}
+
+#i {
+    animation-delay: 5900ms;
+}
+
+#d2 {
+    animation-delay: 6000ms;
+}
+
+#s2 {
+    animation-delay: 6100ms;
+}

@@ -1,0 +1,380 @@
+/*---------All---------*/
+@font-face{
+    font-family: "font1";
+    src: url("Satisfy-Regular.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:  rgba(8, 8, 8, 0.678);
+    color: white;
+}
+/*---------Backgrounds&panels&over/inner---------*/
+.panels {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-attachment: fixed;
+    height: 100vh;
+    background-image: url("images/background.jpg");
+    display: flex;
+    background-blend-mode: darken;
+    background-color: #0f0f0f7e;
+}
+
+.panel1 {
+    /*-------Background-------*/
+    background-image: url("images/squint.jpg");
+    height:100vh;
+
+    /*-------Foreground-------*/
+    color: rgba(224, 210, 210, 0.678);
+    align-items: center;
+    justify-content: center;
+    font-family: font1;
+    font-size: 5vw;
+    font-weight: 100;    
+}
+
+.panel3{
+    height:120vh;
+}
+
+.panel2,.panel4,.overlap{
+    align-items: center;
+    justify-content: center;
+}
+.panel2,.panel4{
+    height: 60vh;
+}
+
+.panel2{
+    background-image: url("images/mountain.jpg");
+}
+.panel2 h1,.panel4 h1{
+    font-size: 10em;
+    color: rgba(254, 254, 255, 0.603);
+    white-space:nowrap;
+}
+.panel4{
+    background-image: url("images/planeviewwork.jpg");
+}
+
+
+.panel5{
+    background-image: url("images/tree.jpg");
+}
+.panel5 li{
+    list-style:circle; 
+    margin: 0.5em;
+}
+.panel5 a{
+    text-decoration: underline;
+}
+
+.panel7{
+    background-image: url("images/salt-harvesting.jpg");
+    height: 300vh;
+}
+.panel {
+    width: 60%;
+    height: 75%;
+    color: white;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.panel h1{
+    padding-top: 2%;
+    text-align: center;
+}
+
+.panel hr{
+    width: 90%;
+    height: .6%;
+    background-color: white;
+    margin: auto;
+}
+
+.overlap{
+    background-color: rgba(254, 254, 255, 0.603);
+    color: rgb(26, 23, 23);
+    display: flex;
+    font-style: oblique;
+    font-family: font1;
+    font-size: 2em;
+    height: 40vh;
+}
+
+.overlap img{
+    padding: 0em 0.1em;
+}
+
+.inner,.inner li{
+    padding: 1em;
+}
+.inner li{
+    display: inline-block;
+}
+
+/*---------Blog&forms---------*/
+#blogentry h1{
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.651);
+    font-style:italic;
+    font-family: font1;
+    text-decoration: underline ;
+    margin-left: 35%;
+}
+.input{
+    display: block;
+    margin: 1em;
+    padding: 1em;
+}
+.inputs{
+    border: none;
+    margin-left: 3em;
+}
+#blogentry{
+    background-color: white;
+    height: 200vh;
+    color: black;
+}
+.blogpanel {
+    background-image: url("images/desktop.jpg");
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+#blog{
+    font-size: 5em;   
+}
+#blog-posts{
+    white-space: nowrap;
+    align-self: center;
+}
+#clear-post,#previewing{
+    visibility: visible;
+    position: static;
+}
+#addpost{
+    background-image: url("images/book.jpg");
+    justify-content: center;
+    align-items: center;
+}
+#comm-head{
+    margin-left: 20%;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.post aside{
+    float: right;
+}
+.post,.comment{
+    border: 1px solid black;
+    padding: 1em;
+    width: 60%;
+    margin: auto;
+    color: black;
+    margin-bottom: 3em;
+}
+.preload,#previewing{
+    visibility: hidden;
+    position: absolute;
+}
+.comment{
+    margin-left: 20%;
+}
+.post hr{
+    margin-bottom: 1em;
+}
+/*----------Buttons----------*/
+.btn{
+    margin-left: 6em;
+    padding: 1em 5em;
+    border-radius: 1.5em;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.btn-1{
+    position: absolute;
+    margin-top: 1em;
+}
+.btn-2{
+    margin-left: 80%;
+}
+.btn-3{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.btn-4{
+    margin: 7em;
+}
+.btn-5{
+    margin-left: 80%;
+}
+.btn-6{
+    margin-left: 45%;
+}
+.btn a,.btn a:visited{
+    color: black;
+    text-decoration: none;
+}
+/*----------Navigation----------*/
+nav {
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    position: absolute;
+    width: 100%;    
+}
+
+.bar li{
+    display: inline-block;  
+    font-size: 1.4em;
+    font-family: monospace;
+    
+    border-radius: 1em;
+    padding-inline: 1em;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.788);
+}
+
+#firstlist{
+    margin-left: 1em;
+}
+
+#endlist{
+    margin-right: 0em;
+}
+
+
+
+/*----------Links&Hovers---------*/
+a:link, a:visited {
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.panel5 a:hover{
+    color: brown;
+}
+.overlap a:link,.overlap a:visited{
+    color: black;
+}
+.overlap a:hover{
+    text-decoration: underline;
+}
+.bar li:hover{
+    transition:ease-in;
+    transition-duration: 400ms;
+    background-color: rgba(255, 255, 255, 0.788);
+}
+
+.bar a:hover{
+    color: black;
+}
+
+body span:hover {
+    color: rgba(255, 0, 0, 0.589);
+    font-size: 1.3em;
+}
+
+/*---------Scrolling---------*/
+#scrolldown{
+    position: absolute;
+    margin-top: 75vh;
+    margin-left: 85%;
+}
+#scroll{
+    background-image: url("images/scrolltotop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
+    position: fixed;
+    margin-top: 80vh;
+    margin-left: 90%;
+    visibility: hidden;
+}
+/*---------Other---------*/
+table{
+    font-size: 2em;
+}
+#exp{
+    font-size: 0.5em;
+    font-style: oblique
+}
+th{
+    padding: 1em;
+}
+
+.xp,.achievement{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1em;
+    margin: 1em;
+    padding: 2em;
+    font-size: 2em;
+}
+.heading{
+    font-style:normal;
+    font-weight: 10em;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+
+
+.hamburger{
+    margin-top: 0.2em;
+    padding: 0.25em 2em;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+}
+.art{
+    font-size: 30px;
+    padding: 5% 7%;
+    width:90%;
+    height: 85%;
+    font-style: italic;
+}
+
+/*---------Responsiveness---------*/
+@media (max-width: 1340px){
+    #barone{
+        display: flex;
+        height: 100vh;
+        visibility: hidden;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+    
+    .hamburger{
+    display: block;
+    background-image: url("images/menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
+    }
+    
+    #barone li{
+        margin: 0.3em;
+        display:list-item;
+        border: none;
+    }
+}
